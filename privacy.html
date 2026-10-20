@@ -32,6 +32,7 @@
     <li>사용자가 '프로듀서' 기능을 켜고 <b>자기 API 키</b>를 넣었을 때, 앱은 노트와 대화를 만들기 위해 맥에서 바로 Anthropic(Claude) 또는 OpenAI로 정보를 보냅니다.</li>
     <li>사용자가 정한 기본값은 <b>전부 보내기</b>입니다: 고른 캘린더의 일정 제목 · 시각 · 색 · 설명 · 장소 · 참석자 이름과 앱에 적은 기록(묵상 · 기도 · 몸 · 돈 · 사람 메모 등). 보내는 범위는 설정에서 끌 수 있고, 처음 보내기 전에 무엇이 가는지 미리 보여 줍니다.</li>
     <li>API 키 · 토큰 같은 비밀 모양 글과 카드 · 계좌 · 주민등록번호 꼴 숫자는 언제나 가린 뒤 보냅니다.</li>
+    <li>일정에 붙은 링크는 주소 대신 사이트 이름만 보냅니다. 회의 링크 뒤에 초대 암호가 붙어 있는 일이 많아서입니다.</li>
     <li>여럿이 같이 쓰는 채팅 계정에 붙이는 '가린 꾸러미'에는 글(일정 제목 · 이름 · 메모)이 들어가지 않고 시간과 패턴 숫자만 들어갑니다.</li>
     <li>OpenAI로 보내는 요청은 서비스 쪽에 저장하지 않도록(store: false) 보냅니다. 두 회사 모두 API로 받은 내용을 모델 학습에 쓰지 않는다고 밝히고 있습니다.</li>
     <li>그 밖에는 누구에게도 정보를 팔거나 넘기지 않으며, 광고에 쓰지 않습니다.</li>
@@ -65,7 +66,7 @@
     <h2>Where it is stored</h2>
     <p>Only on the user's own Mac, in the app's data folder. Google tokens and AI API keys are protected with the macOS Keychain. The developer receives none of this data.</p>
     <h2>When anything leaves the Mac</h2>
-    <p>Only if the user turns on the "producer" feature and enters their own API key: the app then sends, directly from the Mac to Anthropic (Claude) or OpenAI, the information needed to generate notes and chat replies. By the user's choice the default is to send everything (event titles, times, colors, descriptions, locations, attendee names, and notes written in the app); any of it can be turned off in settings, and a preview is shown before the first send. Secret-like strings (API keys, tokens) and card, bank account or national ID numbers are always masked. A redacted packet with numbers only (no titles, names or notes) is offered for chat accounts shared with other people. OpenAI requests are sent with storage turned off. Nothing is sold, shared with anyone else, or used for advertising.</p>
+    <p>Only if the user turns on the "producer" feature and enters their own API key: the app then sends, directly from the Mac to Anthropic (Claude) or OpenAI, the information needed to generate notes and chat replies. By the user's choice the default is to send everything (event titles, times, colors, descriptions, locations, attendee names, and notes written in the app); any of it can be turned off in settings, and a preview is shown before the first send. Secret-like strings (API keys, tokens) and card, bank account or national ID numbers are always masked. Links are reduced to the site name, because meeting links often carry passcodes. A redacted packet with numbers only (no titles, names or notes) is offered for chat accounts shared with other people. OpenAI requests are sent with storage turned off. Nothing is sold, shared with anyone else, or used for advertising.</p>
     <h2>Google API Services User Data Policy</h2>
     <p>Liv OS's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
     <h2>Disconnecting and deleting</h2>
