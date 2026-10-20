@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liv OS 개인정보처리방침</title>
+<meta name="description" content="Privacy Policy for Liv OS, a personal Mac app.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <a class="logo" href="./">L<span class="i">ı</span>v</a>
+  <p class="kicker">Privacy Policy · 시행일 2026.10.20</p>
+  <h1>개인정보처리방침</h1>
+  <p>Liv OS(이하 '앱')는 정현지가 자기 삶을 돌보려고 만든 개인용 맥 앱입니다. 이 문서는 앱이 어떤 정보를 읽고, 어디에 두고, 언제 밖으로 보내는지 설명합니다.</p>
+
+  <h2>1. 앱이 읽는 정보</h2>
+  <ul>
+    <li><b>구글 캘린더 (읽기 전용):</b> 사용자가 직접 연결하고 고른 캘린더의 일정 제목 · 시작과 끝 시각 · 색 · 설명 · 참석 응답 상태. 권한은 <code>calendar.readonly</code> 하나이며, 일정을 만들거나 바꾸거나 지우지 않습니다.</li>
+    <li><b>앱에 직접 적은 기록:</b> 묵상 · 기도 · 오늘의 장면 · 약속 · 아이디어 · 프로듀서와의 대화 등.</li>
+  </ul>
+
+  <h2>2. 정보를 두는 곳</h2>
+  <ul>
+    <li>모든 정보는 앱을 쓰는 맥의 데이터 폴더에만 저장됩니다. 앱에는 서버가 없고, 만든 사람도 이 정보를 받지 않습니다.</li>
+    <li>구글 로그인 토큰과 AI 서비스 API 키는 맥의 키체인(macOS 암호화 저장소)으로 잠가 둡니다.</li>
+    <li>백업도 같은 맥 안에 만들어지며, 사용자가 직접 내보내기를 할 때만 파일로 나옵니다.</li>
+  </ul>
+
+  <h2>3. 밖으로 보내는 경우 (사용자가 켰을 때만)</h2>
+  <ul>
+    <li>사용자가 '프로듀서' 기능을 켜고 <b>자기 API 키</b>를 넣었을 때, 앱은 노트와 대화를 만들기 위해 맥에서 바로 Anthropic(Claude) 또는 OpenAI로 정보를 보냅니다.</li>
+    <li>기본으로 보내는 것은 고른 캘린더의 일정 제목 · 시각 · 색과 앱의 계획 기록입니다. 일정 설명 · 참석자 · 장소와 묵상 · 기도 · 몸 · 돈 숫자 · 사람 메모는 기본으로 보내지 않습니다. 보내는 범위는 설정에서 바꾸고, 보내기 전에 미리 볼 수 있습니다.</li>
+    <li>OpenAI로 보내는 요청은 서비스 쪽에 저장하지 않도록(store: false) 보냅니다. 두 회사 모두 API로 받은 내용을 모델 학습에 쓰지 않는다고 밝히고 있습니다.</li>
+    <li>그 밖에는 누구에게도 정보를 팔거나 넘기지 않으며, 광고에 쓰지 않습니다.</li>
+  </ul>
+
+  <h2>4. 구글 사용자 데이터 정책 준수</h2>
+  <p>Liv OS가 Google API로 받은 정보를 쓰고 다른 곳으로 옮기는 일은 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>와 그 안의 Limited Use 요구 사항을 따릅니다. 구글 정보는 사용자 자신에게 보여 주는 기능에만 쓰며, 사람이 따로 읽지 않습니다(사용자 본인이 보는 경우 제외).</p>
+
+  <h2>5. 연결 끊기와 지우기</h2>
+  <ul>
+    <li>앱 설정에서 구글 연결을 끊으면 토큰을 구글에 반납하고 지웁니다. 받아 둔 캘린더 사본도 함께 지울 수 있습니다.</li>
+    <li>구글 계정의 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">타사 앱 액세스</a>에서도 언제든 권한을 거둘 수 있습니다.</li>
+    <li>앱을 지우고 데이터 폴더를 지우면 맥에 남은 정보도 사라집니다.</li>
+  </ul>
+
+  <h2>6. 바뀔 때</h2>
+  <p>정보를 다루는 방식이 바뀌면 이 문서를 먼저 고치고 시행일을 새로 적습니다.</p>
+
+  <h2>7. 문의</h2>
+  <p><a href="mailto:livcapitalist@gmail.com">livcapitalist@gmail.com</a></p>
+
+  <section class="lang" lang="en">
+    <p class="kicker">English · Effective October 20, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p>Liv OS is a personal Mac app built by Hyunji Jung for her own use. It is not a public service and it has no server.</p>
+    <h2>Information the app reads</h2>
+    <ul>
+      <li><b>Google Calendar, read only</b> (<code>calendar.readonly</code>): titles, start and end times, colors, descriptions and response status of events in the calendars the user connects and selects. The app never creates, edits or deletes events.</li>
+      <li>Notes the user writes in the app.</li>
+    </ul>
+    <h2>Where it is stored</h2>
+    <p>Only on the user's own Mac, in the app's data folder. Google tokens and AI API keys are protected with the macOS Keychain. The developer receives none of this data.</p>
+    <h2>When anything leaves the Mac</h2>
+    <p>Only if the user turns on the "producer" feature and enters their own API key: the app then sends, directly from the Mac to Anthropic (Claude) or OpenAI, the items the user allows (by default event titles, times and colors plus planning notes; descriptions, attendees, locations and private journal entries are off by default) to generate notes and chat replies. A preview is shown before anything is sent. OpenAI requests are sent with storage turned off. Nothing is sold, shared with anyone else, or used for advertising.</p>
+    <h2>Google API Services User Data Policy</h2>
+    <p>Liv OS's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <h2>Disconnecting and deleting</h2>
+    <p>Disconnecting Google in the app's settings revokes and deletes the token, and the local calendar copy can be deleted too. Access can also be removed at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
+    <h2>Contact</h2>
+    <p><a href="mailto:livcapitalist@gmail.com">livcapitalist@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
